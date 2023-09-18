@@ -22,7 +22,28 @@
     <div class="container">
         <h1>
             <a style="text-decoration: none; color: #f1c40f; margin-left: 1.25rem; cursor: pointer;" onclick="location.reload();">Calculator</a>
+            <img id="historybutton" src="./images/history.png">
         </h1>
+        <div class="calculator">
+            <input type="text" name="screen" id="answer" readonly>
+            <table>
+                <tr>
+                    <td><button>(</button></td>
+                    <td><button>)</button></td>
+                    <td>
+                        <div class="row">
+                            <div class="col">
+                                <button style="background-color: #f01600; font-weight: bold; color: #ecf0f1; width: 8vw;" onclick="clearAll()">C</button>
+                            </div>
+                            <div class="col">
+                                <button style="background-color: #f01600; font-weight: bold; color: #ecf0f1;width: 8vw;" onclick="deleteLastEntry()">CE</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
 
     </div>
     
